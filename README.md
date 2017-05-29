@@ -15,7 +15,7 @@ yarn build
 * open [chrome://extensions/](chrome://extensions/)
 * enable developer mode
 * click `Load unpacked extension...`
-* select `index.html` inside `new-tab` folder
+* select `new-tab` folder
 
 ## How to add my own app icon?
 
