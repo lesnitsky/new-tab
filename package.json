@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "webpack-dev-server --hot --inline",
+    "build": "webpack --progress"
+  },
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

@@ -1,0 +1,46 @@
+[{
+  "id": "github",
+  "title": "GitHub",
+  "href": "https://github.com/",
+  "logo": "./logos/github.png"
+}, {
+  "id": "youtube",
+  "title": "YouTube",
+  "href": "https://youtube.com",
+  "logo": "./logos/youtube.png"
+}, {
+  "id": "google-drive",
+  "title": "Google Drive",
+  "href": "https://drive.google.com",
+  "logo": "./logos/google-drive.png"
+}, {
+  "id": "google-play-music",
+  "title": "Google Play Music",
+  "href": "https://play.google.com/music",
+  "logo": "./logos/play-music.png"
+}, {
+  "id": "google-keep",
+  "title": "Google Keep",
+  "href": "https://keep.google.com",
+  "logo": "./logos/google-keep.png"
+}, {
+  "id": "instagram",
+  "title": "Instagram",
+  "href": "https://instagram.com",
+  "logo": "./logos/instagram.png"
+}, {
+  "id": "netflix",
+  "title": "Netflix",
+  "href": "https://netflix.com",
+  "logo": "./logos/netflix.png"
+}, {
+  "id": "twitter",
+  "title": "Twitter",
+  "href": "https://twitter.com",
+  "logo": "./logos/twitter.png"
+}, {
+  "id": "linkedin",
+  "title": "LinkedIn",
+  "href": "https://linkedin.com",
+  "logo": "./logos/linkedin.png"
+}]

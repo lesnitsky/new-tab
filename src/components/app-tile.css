@@ -1,0 +1,12 @@
+.app-tile img {
+  width: 90px;
+  margin: 20px;
+  border-radius: 10px;
+  transform-origin: 50% 50%;
+  transition: transform .1s ease-out;
+  transform: translateZ(0);
+}
+
+.app-tile img:hover {
+  transform: scale(1.1);
+}

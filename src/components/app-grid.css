@@ -1,0 +1,5 @@
+.app-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 650px;
+}
