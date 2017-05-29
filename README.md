@@ -15,11 +15,11 @@ yarn build
 * open [chrome://extensions/](chrome://extensions/)
 * enable developer mode
 * click `Load unpacked extension...`
-* select `new-tab` folder
+* select `dist` folder
 
 ## How to add my own app icon?
 
-Add your app description to `apps.json` and app logo to `logos` folder
+Add your app description to `./src/apps.json` and app logo to `logos` folder
 
 ## LICENSE
 

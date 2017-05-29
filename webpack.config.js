@@ -1,14 +1,15 @@
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  context: path.join(__dirname, 'src'),
   entry: {
-    app: './app.js'
+    app: './src/app.js'
   },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].bundle.js',
-    publicPath: 'dist/'
+    publicPath: '/'
   },
   module: {
     rules: [{
@@ -23,5 +24,13 @@ module.exports = {
       loader: 'url-loader',
       query: { name: '[name].[hash:16].[ext]' }
     }]
-  }
+  },
+  plugins: [
+    new HTMLWebpackPlugin(),
+    new CopyWebpackPlugin([
+      { from: './src/apps.json' },
+      { from: './manifest.json' },
+      { from: './logos', to: './logos' }
+    ])
+  ],
 }
