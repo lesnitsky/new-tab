@@ -1,8 +1,8 @@
 import React from 'react';
 
-require('./app-tile.css');
+import './app-tile.css';
 
-export class AppTile extends React.Component {
+export default class AppTile extends React.Component {
   render() {
     const { app } = this.props;
 

@@ -1,27 +1,22 @@
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 
-require('./styles/main.css');
-const apps = require('./apps');
+import './styles/main.css';
+import apps from './apps.json';
 
-import { AppGrid } from './components/AppGrid';
-import { RandomTitle } from './components/RandomTitle';
+import AppGrid from './components/AppGrid';
+import RandomTitle from './components/RandomTitle';
 
-
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <RandomTitle />
-        <AppGrid apps={apps} />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div>
+    <RandomTitle />
+    <AppGrid apps={apps} />
+  </div>
+)
 
 const reactRoot = document.createElement('div');
 reactRoot.id = 'react-root';
 
 document.body.appendChild(reactRoot);
 
-render(<App />, reactRoot);
+ReactDOM.render(<App />, reactRoot);

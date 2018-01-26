@@ -17,16 +17,12 @@ const titles = [
 
 const rand = n => Math.floor(Math.random() * n);
 
-function getRandomItemFromCollection(collection) {
+const getRandomItemFromCollection = (collection) => {
   const randIndex = rand(collection.length);
 
   return collection[randIndex];
 }
 
-export function getRandomEmoji() {
-  return getRandomItemFromCollection(emojis);
-}
+export const getRandomEmoji = () => getRandomItemFromCollection(emojis);
 
-export function getRandomTitle() {
-  return getRandomItemFromCollection(titles);
-}
+export const getRandomTitle = () => getRandomItemFromCollection(titles);
