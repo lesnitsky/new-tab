@@ -1,27 +1,28 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-require('./styles/main.css');
-const apps = require('./apps');
+import './styles/main.css';
+import apps from './apps.json';
 
-import { AppGrid } from './components/AppGrid';
-import { RandomTitle } from './components/RandomTitle';
+import { getRandomEmoji, getRandomTitle } from './window-title-builder';
 
+import AppGrid from './components/AppGrid';
 
-class App extends React.Component {
+class App extends Component {
+  componentWillMount() {
+    const emoji = getRandomEmoji();
+    const title = getRandomTitle();
+
+    document.title = `${emoji} ${title}`;
+  }
+
   render() {
-    return (
-      <div>
-        <RandomTitle />
-        <AppGrid apps={apps} />
-      </div>
-    );
+    return <AppGrid apps={apps} />;
   }
 }
-
 const reactRoot = document.createElement('div');
 reactRoot.id = 'react-root';
 
 document.body.appendChild(reactRoot);
 
-render(<App />, reactRoot);
+ReactDOM.render(<App />, reactRoot);

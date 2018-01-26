@@ -1,17 +1,13 @@
 import React from 'react';
 
-require('./app-tile.css');
+import './app-tile.css';
 
-export class AppTile extends React.Component {
-  render() {
-    const { app } = this.props;
+const AppTile = ({ app }) => (
+  <div className="app-tile">
+    <a href={app.href}>
+      <img src={app.logo} />
+    </a>
+  </div>
+)
 
-    return (
-      <div className="app-tile">
-        <a href={app.href}>
-          <img src={app.logo} />
-        </a>
-      </div>
-    )
-  }
-}
+export default AppTile;
